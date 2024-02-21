@@ -1,0 +1,105 @@
+.app {
+    width: 285px;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.him {
+        background-color: var(--main-orange);
+    }
+    &.her {
+        background-color: var(--main-teal);
+    }
+
+    &__frame {
+        width: 254px;
+        height: 161px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        &.him {
+            background-color: #DB521A;
+        }
+        &.her {
+            background-color: #02B6A7;
+        }
+    }
+
+    &__top {
+        display: flex;
+        gap: 18px;
+
+        &__logo {
+            width: 66px;
+            height: 66px;
+
+            &.him {
+                background: url(../../../icons/orange/Icon_orange_black.png) center center/cover no-repeat;
+            }
+
+            &.her {
+                background: url(../../../icons/teal/Icon_teal_white.png) center center/cover no-repeat;
+            }
+        }
+
+        &__flex {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__name {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        &__profession {
+            font-size: .5rem;
+        }
+
+        &__get {
+            cursor: pointer;
+            width: 38px;
+            height: 14px;
+            border: none;
+            border-radius: 13px;
+            font-size: .5rem;
+            font-weight: 500;
+        }
+
+        &__innerflex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__bot {
+        display: flex;
+        gap: 9px;
+
+        &__item {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            &:not(:last-child)::after {
+                content: '';
+                position: absolute;
+                bottom: 10px;
+                right: -5px;
+                width: 1px;
+                height: 21px;
+                background-color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.face {
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 285px;
+    height: 100%;
+    &.him {
+        background: url(../../../images/orange/bot_2_orange.jpg) center center/cover no-repeat;
+    }
+    &.her {
+        background: url(../../../images/teal/bot_2_teal.jpg) center center/cover no-repeat;
+    }
+    &__menu {
+        gap: 5px;
+        .menu__item {
+            font-size: .9rem;
+        }
+    }
+    &__logo {
+        width: 27px;
+        transform-origin: 0% 0%;
+        transform: rotate(-90deg) translateX(-110px);
+
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

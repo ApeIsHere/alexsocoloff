@@ -1,0 +1,13 @@
+.profile {
+    position: relative;
+    width: 593px;
+    height: 100%;
+
+    &.him {
+        background: url(../../../images/orange/bot_4_orange.jpg) center center/cover no-repeat;
+    }
+    &.her {
+        background: url(../../../images/teal/bot_4_teal.jpg) center center/cover no-repeat;
+
+    }
+}
