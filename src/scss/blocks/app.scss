@@ -4,12 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &.him {
-        background-color: var(--main-orange);
-    }
-    &.her {
-        background-color: var(--main-teal);
-    }
 
     &__frame {
         width: 254px;
@@ -22,12 +16,7 @@
         align-items: center;
         justify-content: center;
         gap: 15px;
-        &.him {
-            background-color: #DB521A;
-        }
-        &.her {
-            background-color: #02B6A7;
-        }
+        transition: background .2s ease-in-out;
     }
 
     &__top {
@@ -37,14 +26,7 @@
         &__logo {
             width: 66px;
             height: 66px;
-
-            &.him {
-                background: url(../../../icons/orange/Icon_orange_black.png) center center/cover no-repeat;
-            }
-
-            &.her {
-                background: url(../../../icons/teal/Icon_teal_white.png) center center/cover no-repeat;
-            }
+            transition: background .2s ease-in-out;
         }
 
         &__flex {

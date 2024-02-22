@@ -4,12 +4,7 @@
     box-sizing: border-box;
     width: 285px;
     height: 100%;
-    &.him {
-        background: url(../../../images/orange/bot_2_orange.jpg) center center/cover no-repeat;
-    }
-    &.her {
-        background: url(../../../images/teal/bot_2_teal.jpg) center center/cover no-repeat;
-    }
+
     &__menu {
         gap: 5px;
         .menu__item {

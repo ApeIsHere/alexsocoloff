@@ -4,45 +4,140 @@
     margin: 0 auto;
     padding: 54px;
     box-sizing: border-box;
+    position: relative;
 
     display: grid;
     justify-items: center;
     grid-template-columns: 5fr;
     grid-template-rows: 4fr;
     grid-gap: 15px;
-    & > div {
+    
+    &>div {
         border-radius: 14px;
+        transition: background .2s ease-in-out;
     }
+
     .main {
         grid-row: 1 / 3;
         grid-column: 1 / 5;
     }
+
     .side {
         grid-row: 1 / 3;
         grid-column: 5 / 6;
     }
+
     .app {
         grid-row: 3 / 4;
         grid-column: 1 / 2;
     }
+
     .face {
         grid-row: 3 / 5;
         grid-column: 2 / 3;
     }
+
     .browser {
         grid-row: 3 / 4;
         grid-column: 3 / 4;
     }
+
     .profile {
         grid-row: 3 / 5;
         grid-column: 4 / 6;
     }
+
     .corner {
         grid-row: 4 / 5;
         grid-column: 1 / 2;
     }
+
     .like {
         grid-row: 4 / 5;
         grid-column: 3 / 4;
+    }
+
+    &.him {
+        .main {
+            background: url('../../../images/orange/top_1_orange.jpg') center center/cover no-repeat;
+        }
+
+        .side {
+            background: url('../../../images/orange/top_2_orange.jpg') center center/cover no-repeat;
+        }
+
+        .app {
+            background-color: var(--main-orange);
+
+            &__frame {
+                background-color: #DB521A;
+            }
+
+            &__top__logo {
+                background: url('../../../icons/orange/Icon_orange_black.png') center center/cover no-repeat;
+            }
+        }
+
+        .face {
+            background: url('../../../images/orange/bot_2_orange.jpg') center center/cover no-repeat;
+        }
+
+        .browser {
+            background: url('../../../images/orange/browser_orange.jpg') center center/cover no-repeat;
+        }
+
+        .profile {
+            background: url('../../../images/orange/bot_4_orange.jpg') center center/cover no-repeat;
+        }
+
+        .corner {
+            background: url('../../../images/orange/bot_1_orange.jpg') center center/cover no-repeat;
+        }
+
+        .like {
+            background: url('../../../images/orange/bot_3_orange.jpg') center center/cover no-repeat;
+        }
+    }
+
+    &.her {
+        .main {
+            background: url('../../../images/teal/top_1_teal.jpg') center center/cover no-repeat;
+        }
+
+        .side {
+            background: url('../../../images/teal/top_2_teal.jpg') center center/cover no-repeat;
+        }
+
+        .app {
+            background-color: var(--main-teal);
+
+            &__frame {
+                background-color: #02B6A7;
+            }
+
+            &__top__logo {
+                background: url('../../../icons/teal/Icon_teal_white.png') center center/cover no-repeat;
+            }
+        }
+
+        .face {
+            background: url('../../../images/teal/bot_2_teal.jpg') center center/cover no-repeat;
+        }
+
+        .browser {
+            background: url('../../../images/teal/browser_teal.jpg') center center/cover no-repeat;
+        }
+
+        .profile {
+            background: url('../../../images/teal/bot_4_teal.jpg') center center/cover no-repeat;
+        }
+
+        .corner {
+            background: url('../../../images/teal/bot_1_teal.jpg') center center/cover no-repeat;
+        }
+
+        .like {
+            background: url('../../../images/teal/bot_3_teal.jpg') center center/cover no-repeat;
+        }
     }
 }

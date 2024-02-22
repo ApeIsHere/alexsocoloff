@@ -2,12 +2,6 @@
     position: relative;
     width: 285px;
     height: 535px;
-    &.him {
-        background: url('../../../images/orange/top_2_orange.jpg') center center/cover no-repeat;
-    }
-    &.her {
-        background: url('../../../images/teal/top_2_teal.jpg') center center/cover no-repeat;
-    }
 
     &__logo {
         position: absolute;
